@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growpital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-black">
+    <!-- Header section of top -->
+    <header class="flex flex-row justify-between px-4 py-5 bg-black text-white">
+        <div class="flex flex-row w-4/5 justify-center items-center">
+            <!-- Logo of Growpital -->
+            <h1 class="text-5xl tracking-wide w-1/5 flex justify-start font-semibold logo">Growpital</h1>
+            <!-- Top nav section -->
+            <nav class="flex flex-row w-4/5 justify-end">
+                <ul class="flex flex-row justify-around w-full">
+                    <li><a href="#" class="text-white font-bold capitalize tracking-wide text-xl">Home</a></li>
+                    <li><a href="#" class="text-white font-bold capitalize tracking-wide text-xl">About</a></li>
+                    <li><a href="#" class="text-white font-bold capitalize tracking-wide text-xl">Service</a></li>
+                    <li><a href="#" class="text-white font-bold capitalize tracking-wide text-xl">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- user section starts -->
+
+        <div class="flex flex-row justify-around w-[10%]">
+            <div class="relative">
+                <div class="absolute bg-yellow-400 w-3 h-3 rounded-full top-0 right-1"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-yellow-200">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-yellow-200">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>                            
+        </div>
+
+        <!-- user section ends -->
+
+    </header>
+    <!-- Pop up starts -->
+
+    <div class="popup  flex absolute z-10 right-[40%] flex-col text-white w-[30vw] bg-slate-600 px-3 py-3 rounded-xl">
+        <!-- Cross button -->
+        <div class="cross relative w-full p-2 cursor-pointer ">
+            <i class="fa-solid fa-xmark absolute top-0 right-2"></i>
+        </div>
+
+        <div class="flex justify-between items-center mb-2">
+            <div>
+                <p class="font-light text-base w-3/5 tracking-wide">Money added to wallet from bank account</p>
+                <h1 class="tamount text-xl font-bold"></h1>                                         <!--tamount variable or class-->
+                <p class="tdate font-light text-base tracking-wide"></p>       <!--tdate variable or class-->
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300"></i>
+        </div>
+
+        <div class="flex bg-green-800 py-3 px-4 rounded-lg mb-5 items-center">
+            <i class="fa-regular fa-circle-check text-yellow-300 fa-2xl mr-3"></i>
+            <div>
+                <h1 class="font-bold font-xl tracking-wide">Transaction Complete!</h1>
+                <p class="font-light text-sm tracking-wide">Tab to view this transaction</p>
+            </div>
+        </div>
+
+        <div class="border-2 p-2 border-slate-500 rounded-xl">
+            <div class="grid grid-cols-2 grid-rows-2 ">
+                <div>
+                    <p class="text-yellow-300 tracking-wide">From</p>
+                    <div class="sender-details">
+                        <!-- sender details -->
+                        
+                    </div>
+                </div>
+                <div class="flex justify-end pr-5">
+                    <div class="w-9 h-8 flex justify-center items-center rounded-full bg-black text-white font-bold">SM</div>
+                </div>
+
+                <div>
+                    <p class="text-yellow-300 tracking-wide">To</p>
+                    <div class="receiver-details">
+                        <!-- receiver details -->
+                    </div>
+                    
+                </div>
+                <div class="flex justify-end mt-4 pr-5">
+                    <i class="fa-solid fa-wallet fa-2xl text-yellow-300"></i>
+                </div>
+            </div>
+
+            <div class="mt-2 w-full">
+                <p class="font-light text-sm"><span class="font-bold tracking-wide">Payment Method</span> : UPI</p>
+                <p class="font-light text-sm w-full"><span class="font-bold tracking-wide">Transaction ID</span> : DBTR/222201998174 <i class="fa-regular fa-copy text-yellow-300 fa-xl"></i></p>
+            </div>
+        </div>
+        <div class="w-full flex flex-row justify-end px-10">
+            <button class="bg-yellow-300 px-10 py-2 rounded-lg m-2 text-black font-bold tracking-wide">Help</button>
+            <button class="bg-transparent border-2 border-slate-500 px-10 py-2 rounded-lg m-2 text-white font-bold tracking-wide">Share</button>
+        </div>
+    </div>
+
+    <!-- Pop up ends -->
+    <main class="flex relative">
+        <!-- Side nav bar for user section -->
+        <aside class="flex flex-col my-10 w-48 h-[57vh] items-center bg-slate-700 text-white rounded-tr-lg rounded-br-lg">
+            <div class="flex flex-row gap-2 py-4 text-xl border-b-2 border-yellow-300 w-full justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-yellow-300">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
+                <h1 class="font-medium tracking-wide">Manu</h1>
+            </div>
+            <ul class="flex flex-col">
+                <li><a href="#" class="flex flex-row py-4 gap-2 text-lg">
+                    <img src="./images/home-icon.png" alt="home-icon">                      
+                    Home
+                </a>
+                </li>
+                <li><a href="#" class="flex flex-row py-4 gap-2 text-lg">
+                    <img src="./images/portfolio-icon.png" alt="home-icon">                                         
+                    Portfolio</a>
+                </li>
+                <li><a href="#" class="flex flex-row py-4 gap-2 text-lg">
+                    <img src="./images/invest-icon.png" alt="home-icon">                   
+                    Invest</a>
+                </li>
+                <li><a href="#" class="flex flex-row py-4 gap-2 text-lg text-yellow-300">
+                    <img src="./images/wallet-icon.png" alt="home-icon">                                         
+                    Wallet</a>
+                </li>
+                <li><a href="#" class="flex flex-row py-4 gap-2 text-lg">
+                    <img src="./images/icon-wrapper.png" alt="home-icon">                   
+                    Support</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- card and transaction history section -->
+        <div class="w-[50%] m-10">
+            <!-- card to see bank balance -->
+            <div class="bg-[url('./images/card-bg.png')] bg-no-repeat bg-center bg-cover w-[25vw] h-[25vh] rounded-xl p-5">
+                <div class="flex flex-row justify-between text-white ">
+                    <div>
+                        <p class="text-lg font-bold tracking-wide">Your Balance</p>
+                        <p class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-white "></i> 4210.00 </p>
+                    </div>
+                    <img src="./images/money-wallet.png" alt="money-wallet" class="w-auto h-auto">
+                    
+                </div>
+                <div class="w-full flex justify-around mt-6">
+
+                    <!--this is my target button-->
+
+                    <button class="bg-yellow-400 py-2 px-4 rounded-lg cursor-pointer font-bold tracking-wide ">Add Money</button>
+                    <button class="bg-slate-700 text-white py-2 px-6 rounded-xl cursor-pointer font-bold tracking-wide">Withdraw</button>
+                </div>
+            </div>
+
+            <!-- Transaction history section -->
+
+            <div class="text-white my-20 w-full grid grid-cols-2 grid-rows-7 gap-5 capitalize ">
+                <div class="text-3xl font-bold tracking-wide">transaction</div><div class="text-yellow-300  text-right text-lg tracking-wide"><a href="#">View All</a></div>
+                
+                <div class="flex items-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300"></i>
+                    <div class="mx-2">
+                        <h1>Youtube Premium</h1><p>9 Aug 2022 8:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-right">- <i class="fa-solid fa-indian-rupee-sign"></i> 3,000</div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300 rotate-[180deg]"></i>
+                    <div class="mx-2">
+                        <h1>facebook ads</h1><p>9 Aug 2022 9:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-yellow-300 text-right">+ <i class="fa-solid fa-indian-rupee-sign"></i> 3,000</div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-rotate fa-2xl text-yellow-300"></i>
+                    <div class="mx-2">
+                        <h1>facebook ads</h1><p>6 Aug 2022 3:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-red-600 text-right">
+                    <i class="fa-solid fa-indian-rupee-sign"></i> 3,000
+                    <p><i class="fa-solid fa-rotate"></i> Failed</p>
+                </div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300 rotate-[180deg]"></i>
+                    <div class="mx-2">
+                        <h1 class="text-[15px]">hemant kant malviya sent money to bank</h1><p class="text-sm">2 Aug 2022 4:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-yellow-300 text-right">+ <i class="fa-solid fa-indian-rupee-sign"></i> 3,000</div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-rotate fa-2xl text-yellow-300"></i>
+                    <div class="mx-2">
+                        <h1>facebook ads</h1><p>6 Aug 2022 3:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-red-600 text-right">
+                    <i class="fa-solid fa-indian-rupee-sign"></i> 3,000
+                    <p><i class="fa-solid fa-rotate"></i> Failed</p>
+                </div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300 rotate-[180deg]"></i>
+                    <div class="mx-2">
+                        <h1>facebook ads</h1><p>9 Aug 2022 9:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-yellow-300 text-right">+ <i class="fa-solid fa-indian-rupee-sign"></i> 3,000</div>
+
+                <div class="flex items-center">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2xl text-yellow-300"></i>
+                    <div class="mx-2">
+                        <h1>Youtube Premium</h1><p>9 Aug 2022 8:30 PM</p>
+                    </div>
+                </div>
+                <div class="text-right">- <i class="fa-solid fa-indian-rupee-sign"></i> 3,000</div>
+            </div>
+        </div>
+
+        <!-- right card to add money options to bank account -->
+
+        <div class="text-white w-[25vw] border-2 border-slate-600 rounded-xl  absolute right-2 top-20 px-2 py-3">
+            <div>
+                <h1 class="m-2 text-xl">Add Money</h1>
+                <div class="border-2 border-slate-600 rounded-lg p-2">
+                    <p class="text-slate-700 ">Enter Amount to add</p>
+                    <input type="text" name="amount" id="amount" value="100,000" class="bg-transparent focus:outline-none px-2 border-b-2">
+                </div>
+            </div>
+            <div class="flex flex-row my-5 justify-start items-end">  
+                <div class="mx-2 cursor-pointer bg-slate-800 text-yellow-300 rounded-lg p-1"><i class="fa-solid fa-indian-rupee-sign"></i>5,000</div>
+                <div class="mx-2 cursor-pointer bg-slate-800 text-yellow-300 rounded-lg p-1"><i class="fa-solid fa-indian-rupee-sign"></i>10,000</div>
+                <div class="mx-2 cursor-pointer">
+                    <h1 class="text-yellow-300 text-center">Popular</h1>
+                    <div class="bg-slate-800 text-yellow-300 rounded-lg p-1"><i class="fa-solid fa-indian-rupee-sign"></i>50,000</div>
+                </div>
+                <div class="ml-3 cursor-pointer bg-yellow-600 text-black rounded-lg p-1"><i class="fa-solid fa-indian-rupee-sign"></i>100,000</div>
+            </div>
+            <div class="bg-orange-800 text-yellow-300 p-1 rounded-lg flex justify-around items-center">
+                <i class="fa-solid fa-building-columns fa-2xl"></i>
+                <div class="text-white">
+                    <h1>Send Money To Bank</h1>
+                    <p class="uppercase">rtgs/neft/imps?</p>
+                </div>
+                <a href="#">Know More</a>
+            </div>
+            <button class="target w-full mt-5 text-center bg-yellow-400 font-semibold text-lg text-black rounded-lg py-2 ">Continue</button>
+        </div>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
